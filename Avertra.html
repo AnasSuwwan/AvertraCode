@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Avertra Pro</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="author" content="Anas Suwwan">
+	<link rel="stylesheet" type="text/css" href="css/Avertra.css">
+	<script src="https://www.amcharts.com/lib/4/core.js"></script>
+	<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+	<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+	<script src="https://www.amcharts.com/lib/4/themes/kelly.js"></script>
+	<script src="https://kit.fontawesome.com/bae9774610.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav>
+		<ul>
+			<img src="img/logo.png">
+			<li class="li1"><a href="">Home</a></li>
+			<li class="li1"><a href="">About</a></li>
+			<li class="li1"><a href="">Contact</a></li>
+			<li class="li1"><a href="">Services</a></li>
+			<div class="icon">
+				<li><i class="icons fas fa-globe gray white"></i></li>
+				<li><i class="icons fas fa-comments gray white"></i></li>
+				<li><i class="icons fas fa-bell gray white"></i> </li>
+				<div>
+				<h2 class="title white"><b>John Smith </b></h2>
+				<small class="title1"><br>Product Maneger </small>
+				</div>
+
+				<i class="fas fa-user-alt user"></i>
+			</div>
+		</ul>
+			
+	</nav>
+	<div class="section">
+		<div class="leftNav">
+				<div class="n1 white">
+					<p class="inline pra"> <i class="fas fa-chart-bar baro"> Dashboard</i></p>
+				</div>
+				<div class="n2 white">
+					<p class="inline pra"><i class="fas fa-map-marker-alt baro"> Routes preduction statistics</i></p>
+				</div>
+				<div class="n3 white">
+					<p class="inline pra"><i class="fas fa-chalkboard baro">  Courier Tracking</i></p>
+				</div>
+				<div class="n4 white">
+					<p class="inline pra"><i class="fas fa-power-off baro"> Sign Out</i></p>
+				</div>
+		</div>
+		<div class="container">
+		  <form>
+				<div class="group">      
+					<input type="text" required>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+		    	    <label>Name</label>
+				</div>      
+				<div class="group">      
+					<input type="text" required>
+					<span class="highlight"></span>
+			        <span class="bar"></span>
+				    <label>City</label>
+				</div>
+			    <div class="group">      
+			      <input type="text" required>
+			      <span class="highlight"></span>
+			      <span class="bar"></span>
+			      <label>Route</label>
+				</div>
+			    <div class="group">      
+				      <input class="input1" type="text" required>
+					  <span class="highlight"></span>
+					  <span class="bar1"></span>
+				      <label>From <i class="cal fas fa-calendar-week"></i></label>  
+				</div>
+				<div class="group">      
+					      <input class="input1" type="text" required>
+					      <span class="highlight1"></span>
+					      <span class="bar1"></span>
+					      <label>To  <i class="cal1 fas fa-calendar-week"></i></label>	     
+				</div>
+				<div><button class="button1"><span class="btn">Search</span></button></div>
+				<div><button class="button2 white"><span class="btn">Clear</span></button></div>
+			  </form>
+		</div>
+			<div class="all">
+					<div class="mainChart">
+						<div class="barChart">
+							      <div id="chartdiv" style="width: 300px"></div>
+						</div>
+						<div class="PieChart  white">
+							<p >Route 1 Failure Reasons</p>
+							<div class="pie">
+								<span id="content1" class="white">65%</span>
+								<span id="content2" class="white">35%</span>
+								 <div class="int">
+					               <pre class="white">Entity 1</pre>
+					               <hr>
+					               <pre class="white">City1 , City2</pre>
+					               <hr>
+					               <pre class="white">R1 , R2 , R3</pre>
+					               <hr>
+					               <pre class="white">January 20 </pre>
+					               <hr>
+					             </div>
+							</div>
+							<div class="sm-pie1"></div>
+								<small class="white">Wrong Predications</small><br>
+								<div class="sm-pie2"></div>
+								<small class="white">New Instrucions</small>
+								</div>
+					</div>
+
+				<div class="forTable white">
+					<p>Table of wrong predected AWBs</p>
+					<hr>
+					<table >
+							<tr>
+								<th>hello</th>
+								<th>hello</th>
+								<th>hello</th>		
+							</tr>
+							<tr class="white">
+								<td>hi</td>
+								<td>hi</td>
+								<td>hi</td>	
+							</tr>
+							<tr class="white">
+								<td>hi</td>
+								<td>hi</td>
+								<td>hi</td>		
+							</tr>
+							<tr class="white">
+								<td>hi</td>
+								<td>hi</td>
+								<td>hi</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+	</div>
+	<script type="text/javascript" src="js/Avertra.js"></script>
+</body>
+</html>

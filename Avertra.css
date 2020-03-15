@@ -1,0 +1,580 @@
+*	
+			{
+				margin: 0;
+				padding: 0
+			}
+		body
+			{
+				background-color: #313842;
+				font-family: sans-serif;
+			}
+		nav
+			{
+				background-color: #36404c;
+			}
+		nav ul
+			{
+			    padding: 10px 0px 0 30px;
+				display: flex; 
+				list-style: none;
+			}
+		nav ul .li1 li
+			{
+				padding: 0px 20px 0 20px;
+			}
+		 li {padding: 10px 20px 0 20px; }
+		nav ul .li1 a 
+			{
+				text-decoration: none;
+				font-size:18px;
+				color:#fff;
+				font-family: Audiowide;
+				padding: 5px;
+				border-radius: 3px;
+			}
+		nav ul .li1 :hover
+			{
+				background-color: #fff;
+				color:#000;
+				transition: 0.5s;
+				border-bottom: solid 2px #000;
+				border-top: solid 2px #000;
+			}
+			 .icons:hover
+              {
+
+                background-color:transparent; ;
+                color: blue;
+                border-radius: 50% ;
+              }
+		.icon
+			{
+				display: flex; 
+			    margin-left: 370px;
+
+			}
+		img
+			{
+				width: 50px;
+				height: 50px;
+				border-radius: 6px;
+
+			}
+		.user
+			{
+			 	font-size: 30px;
+			 	border-radius: 30px ; 
+			 	border: 3px solid #40f8f6 ;
+			 	background-color: #fff;
+			 	padding: 6px 5px 10px 5px;
+			 	margin-left: 15px;
+			 	height: 23px;
+			}
+
+		.title
+			{
+			    margin-block-end: -1.17rem;
+
+			}
+		.title1
+			{
+				color: #ddd;
+			}
+		.baro{    padding: 13px 0 13px 0;}
+		.white{color: #fff;}
+		.section
+			{
+				display: flex; 
+
+			}
+	
+
+		.leftNav
+			{
+			height: 520px;
+			width: 233px; 
+			background-color:#36404c;
+			   	margin: 20px 20px 0 0;
+			padding: 10px 0px 10px 0px ;
+			display:inline-block  ;
+		}
+		.n1 ,.n2 ,.n3 ,.n4
+			{
+				padding: 10px;
+				height: 10px;
+				margin-top : 40px;
+
+			}
+		.n1 :hover{  background-color: #1d636d;  border-left: solid; border-color:  #00b8e6}
+		.n2 :hover{  background-color: #1d636d; border-left: solid;border-color:  #00b8e6 }
+		.n3 :hover{  background-color: #1d636d; border-left: solid;border-color:  #00b8e6 }
+		.n4 :hover{  background-color: #1d636d;border-left: solid; border-color:  #00b8e6 }
+
+		.container
+	 		{ 
+				margin-top: 10px;
+ 				font-family:'Roboto';
+  				display:block; 
+				padding: 15px 26px 0px 35px}
+		h2 
+	     	{ 
+  				text-align:center; 
+}
+			
+		.footer 
+			{
+			 text-align:center;
+			}
+		.footer a 
+			{
+			  color:#53B2C8; 
+			}
+
+/* form starting stylings ------------------------------- */
+		.group
+			{ 
+  			position:relative; 
+ 			margin-bottom:40px; 
+			}
+input 				{
+  font-size:18px;
+  background-color: transparent;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+.input1 				{
+  font-size:18px;
+  background-color: transparent;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:150px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:15px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:100%; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+.bar1 	{ position:relative; display:block; width:100% }
+.bar1:before, .bar1:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar1:before {
+  left:0%;
+}
+.bar1:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar1:before, input:focus ~ .bar1:after {
+  width:50%;
+}
+
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+			  position:absolute;
+			  height:60%; 
+			  width:100px; 
+			  top:25%; 
+			  left:0;
+			  pointer-events:none;
+			  opacity:0.5;
+			}
+		.cal
+			{
+				margin-left: 35px; 
+				font-size: 15px
+			}
+		.cal1
+			{
+				margin-left: 55px;
+				font-size: 15px;
+			}
+		.button1	
+			{
+					width: 200px;
+					height: 40px ; 
+					border-radius: 4px ;
+					margin-bottom: 7px;
+					background-color: #40f8f6; 
+					border-style: none;
+					box-shadow:-4px -4px 4px #00e6e6;
+
+			}
+		.button2	
+			{
+					margin-top: 5px;
+					width: 200px;
+					height: 40px ; 
+					border-radius: 4px ;
+					background-color: #069ada; 
+					border-style: none;
+				    box-shadow: -4px -4px 4px #008080;
+
+			}
+
+		button span
+			{
+			  cursor: pointer;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+
+		button span:after 
+			{
+			  content: '\00bb';
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: -20px;
+			  transition: 0.5s;
+			}
+
+		button:hover span
+			{
+		  padding-right: 25px;
+			}
+
+		button:hover span:after
+			 {
+			  opacity: 1;
+			  right: 0;
+			}
+		.mainChart
+				{
+					display: flex;
+				}
+				/*////////////////////////////////Bar Chart///////////////////////////////////*/
+				#chartdiv
+					{
+						border-radius: 10px;
+					background-color: #36404c;
+					margin-top: 15px;
+					padding-bottom: 40px;
+ 					height: 300px;
+					}
+				/*//////////////////////////////Pie Chart/////////////////////////////////////*/
+				.PieChart
+				{	border-radius: 10px;
+					background-color: #36404c;
+					padding: 0 112px 0 20px;
+   					margin: 15px 13px 0px 20px;
+
+				}
+				.pie
+					{
+
+					width: 200px;
+					height: 200px;
+					border-radius: 50%;
+					position: relative;
+  					background: conic-gradient(  #99ff33 0 65%, #069ada 0);
+					}
+				#content1 
+					{
+				    position: relative;
+   					top: 120px;
+    				left: 118px;
+					}
+				#content2
+				    {
+		    		position: relative;
+   					top: 68px;
+   					
+					}
+		.sm-pie1	
+					{
+						width: 20PX;
+						height: 20px ;
+						background-color: #99ff33 ; 
+						 display: inline-block;
+						  margin:10px 0 0  50px
+					}
+		.sm-pie2
+					{
+						width: 20PX;
+						height: 20px ;
+						background-color: #069ada ; 
+						display: inline-block;
+						margin:10px 0 0 50px
+					}
+		.int 		{
+						position: relative; 
+						width: 90px;
+						left: 218px;
+					}
+		pre  		
+					{
+						line-height: 50px;
+					}
+					/*//////////////////////////////for Table////////////////////////////*/
+		table
+				{
+					width: -webkit-fill-available;
+					border-spacing: 5px ;
+					margin-top: 10px;
+				}
+		tr
+				{
+						width: 100%;
+				}
+		th 	
+				{
+					padding: 10px 0;
+					background-color: #ff9900 
+				}
+
+		td  
+				{
+					padding :8px; 
+					background-color:#4d4d4d ;
+					text-align: center; 
+				}
+		.forTable	
+				{
+					margin-top: 10px;
+					 width: 649px ;
+				}
+		.white
+		 		{
+					color: white
+				}
+		hr			
+				{
+				    border-block-end: 0px;
+				}
+
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@media only screen and (max-width: 767px)
+			{
+		body{background-color: #008080;}
+		nav ul
+				{
+				height:230px;
+				flex-direction: column;
+				text-align: center;
+				}
+
+		 .icon
+			{
+				display: block; 
+			   	flex-direction: column;
+			   	margin: 59px 0 0 153px;
+    padding-top: 12px;
+    line-height: 2;
+
+
+			}
+
+		.user
+			{
+			 	font-size: 30px;
+			 	border-radius: 30px ; 
+			 	border: 3px solid #40f8f6 ;
+			 	background-color: #fff;
+			 	padding: 0px;
+			 	 border-spacing: 0px;
+			 	 margin-left: 0;
+			 }
+		.container{background-color: #fff}
+
+				{
+					display: block;
+				}
+	
+		.all{display: block;}
+		.leftNav
+				{
+				margin-top: 0px;
+				display: block; 
+				}
+		#chartdiv
+				{	
+					margin-left: 20px;
+				    padding-right: 130px;
+				}
+			.section
+				{
+					display: block;
+				}
+			.mainChart
+				{
+					display: block;
+				}
+				.forTable	
+				{
+					margin: 10px 0 0 5px;
+					 width: 450px ;
+				}
+				.button1{display: block;}
+				.button2{display: block;}
+		nav ul
+			{
+				display: block; 
+			}
+		img
+			{
+				position: relative;
+				left: 50%;
+			}
+		}
+
+
+@media only screen and (max-width: 1068px)
+			{
+			body{background-color: #008080;}
+			nav ul
+				{
+				height:230px;
+				flex-direction: column;
+				text-align: center;
+				}
+					.container{background-color: #fff}
+
+.user
+			{
+			 	font-size: 30px;
+			 	border-radius: 30px ; 
+			 	border: 3px solid #40f8f6 ;
+			 	background-color: #fff;
+			 	padding: 0px;
+			 	 border-spacing: 0px;
+			 	 margin-left: 0;
+			 }
+			 .icon
+			{
+				display: block; 
+			   	flex-direction: column;
+			  
+			   	margin: 59px 0 0 153px;
+    padding-top: 12px;
+    line-height: 2;
+
+
+			}
+			 .user 
+			{	color: #ddd;
+				background-color: #015d56;
+				height: 40px;
+				width: 40px;
+				border-color: #40f8f6;
+				transition: 0.9s;
+			}
+	.leftNav{
+				margin-top: 0px;
+				display: block; 
+			}
+	#chartdiv
+				{ 
+					margin-top: 0px;
+					margin-left: 20px;
+				    padding-right: 130px;
+				}
+				.button1{display: flex;}
+				.button2{display: flex;}
+	.section
+				{
+					display: block;
+				}
+	.container
+				{
+
+					display: block;
+				}
+	.mainChart
+				{
+					display: block;
+				}
+	.forTable	
+				{
+					margin: 10px 0 0 5px;
+					 width: 450px ;
+				}
+	nav ul
+			{
+				display: flex; 
+			}
+			img
+			{
+				position: relative;
+				left: 44%;
+			}
+	}
